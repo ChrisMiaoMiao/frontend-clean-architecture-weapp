@@ -1,0 +1,40 @@
+.add-wrap {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  margin-bottom: 40rpx;
+}
+
+.title {
+  font-size: 72rpx;
+  text-align: center;
+  margin-top: 40rpx;
+  color: red;
+  margin-bottom: 40rpx;
+}
+.input {
+  width: 350rpx;
+  border: 1px solid #eee;
+}
+
+.add-btn {
+  width: 150rpx;
+  margin-left: auto;
+  background: #aaa;
+  text-align: center;
+}
+
+.delete-btn {
+  width: 100rpx;
+  margin-left: auto;
+  background: #aaa;
+  text-align: center;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #eee;
+}

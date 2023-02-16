@@ -1,0 +1,1 @@
+{"version":3,"file":"delete-todo-list.usecase.js","sourceRoot":"","sources":["../../../../src/domain/todo/usecases/delete-todo-list.usecase.ts"],"names":[],"mappings":";;;AAKA;IACE,2BAAqB,cAAkC;QAAlC,mBAAc,GAAd,cAAc,CAAoB;IAAG,CAAC;IAE3D,mCAAO,GAAP,UAAQ,MAAc;QACpB,OAAO,IAAI,CAAC,cAAc,CAAC,UAAU,CAAC,MAAM,CAAC,CAAA;IAC/C,CAAC;IACH,wBAAC;AAAD,CAAC,AAND,IAMC;AANY,8CAAiB"}

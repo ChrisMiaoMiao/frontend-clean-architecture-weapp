@@ -1,0 +1,32 @@
+{
+  "name": "frontend-clean-architecture-weapp",
+  "private": "true",
+  "version": "1.0.0",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "nohoist": [
+    "**/vue/core",
+    "**/vue/**"
+  ],
+  "scripts": {
+    "core": "yarn workspace @todolist/core build",
+    "vue-app": "yarn workspace vue-app serve",
+    "mp-app": "node scripts/build-mp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "weapp",
+    "vue",
+    "clean",
+    "architecture"
+  ],
+  "author": "ChrisMiaoMiao",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "@vue/cli-plugin-typescript": "4.5.13",
+    "typescript": "^4.9.5"
+  }
+}
