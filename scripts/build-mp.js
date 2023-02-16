@@ -9,5 +9,5 @@ if (fs.existsSync(targetPath)) {
 }
 
 fs.copy(corePackagePath, targetPath)
-  .then(() => console.log('wx ajax sync successfully!'))
+  .then(() => console.log('success'))
   .catch(err => console.error(err))
