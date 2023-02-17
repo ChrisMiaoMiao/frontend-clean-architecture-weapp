@@ -1,18 +1,13 @@
 import { dependenciesLocator } from '../../lib/core/index'
-
+import usePlopBehavior from '../../common/plop-behavior'
 const ploc = dependenciesLocator.provideToDoListPloc()
 
 Page({
+  behaviors: [usePlopBehavior(ploc)],
   data: {
-    state: '',
     inputStr: ''
   },
 
-  stateSubscription (newState: any) {
-    this.setData({
-      state: newState
-    })
-  },
 
   handleInputChange (e: WechatMiniprogram.CustomEvent) {
     this.setData({
@@ -30,11 +25,7 @@ Page({
     ploc.deleteToDo(+e.currentTarget.dataset.id)
   },
 
-  onUnload () {
-    ploc.unsubscribe(this.stateSubscription);
-  },
   onLoad() {
-    ploc.subscribe(this.stateSubscription);
     ploc.getToDoList()
   }
 })
